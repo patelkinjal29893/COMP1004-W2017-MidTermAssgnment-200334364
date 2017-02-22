@@ -30,10 +30,10 @@
         {
             this.NextButton = new System.Windows.Forms.Button();
             this.JobGroupBox = new System.Windows.Forms.GroupBox();
-            this.SoldierRadioButton = new System.Windows.Forms.RadioButton();
+            this.CultistRadioButton = new System.Windows.Forms.RadioButton();
             this.RogueRadioButton = new System.Windows.Forms.RadioButton();
             this.MagickerRadioButton = new System.Windows.Forms.RadioButton();
-            this.CultistRadioButton = new System.Windows.Forms.RadioButton();
+            this.SoldierRadioButton = new System.Windows.Forms.RadioButton();
             this.HealthPointsLabel = new System.Windows.Forms.Label();
             this.JobGroupBox.SuspendLayout();
             this.SuspendLayout();
@@ -47,6 +47,7 @@
             this.NextButton.TabIndex = 3;
             this.NextButton.Text = "Next";
             this.NextButton.UseVisualStyleBackColor = true;
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
             // JobGroupBox
             // 
@@ -62,16 +63,16 @@
             this.JobGroupBox.TabStop = false;
             this.JobGroupBox.Text = "Job";
             // 
-            // SoldierRadioButton
+            // CultistRadioButton
             // 
-            this.SoldierRadioButton.AutoSize = true;
-            this.SoldierRadioButton.Location = new System.Drawing.Point(57, 38);
-            this.SoldierRadioButton.Name = "SoldierRadioButton";
-            this.SoldierRadioButton.Size = new System.Drawing.Size(77, 21);
-            this.SoldierRadioButton.TabIndex = 0;
-            this.SoldierRadioButton.TabStop = true;
-            this.SoldierRadioButton.Text = "Soldier";
-            this.SoldierRadioButton.UseVisualStyleBackColor = true;
+            this.CultistRadioButton.AutoSize = true;
+            this.CultistRadioButton.Location = new System.Drawing.Point(57, 149);
+            this.CultistRadioButton.Name = "CultistRadioButton";
+            this.CultistRadioButton.Size = new System.Drawing.Size(71, 21);
+            this.CultistRadioButton.TabIndex = 1;
+            this.CultistRadioButton.TabStop = true;
+            this.CultistRadioButton.Text = "Cultist";
+            this.CultistRadioButton.UseVisualStyleBackColor = true;
             // 
             // RogueRadioButton
             // 
@@ -95,16 +96,16 @@
             this.MagickerRadioButton.Text = "Magicker";
             this.MagickerRadioButton.UseVisualStyleBackColor = true;
             // 
-            // CultistRadioButton
+            // SoldierRadioButton
             // 
-            this.CultistRadioButton.AutoSize = true;
-            this.CultistRadioButton.Location = new System.Drawing.Point(57, 149);
-            this.CultistRadioButton.Name = "CultistRadioButton";
-            this.CultistRadioButton.Size = new System.Drawing.Size(71, 21);
-            this.CultistRadioButton.TabIndex = 1;
-            this.CultistRadioButton.TabStop = true;
-            this.CultistRadioButton.Text = "Cultist";
-            this.CultistRadioButton.UseVisualStyleBackColor = true;
+            this.SoldierRadioButton.AutoSize = true;
+            this.SoldierRadioButton.Location = new System.Drawing.Point(57, 38);
+            this.SoldierRadioButton.Name = "SoldierRadioButton";
+            this.SoldierRadioButton.Size = new System.Drawing.Size(77, 21);
+            this.SoldierRadioButton.TabIndex = 0;
+            this.SoldierRadioButton.TabStop = true;
+            this.SoldierRadioButton.Text = "Soldier";
+            this.SoldierRadioButton.UseVisualStyleBackColor = true;
             // 
             // HealthPointsLabel
             // 

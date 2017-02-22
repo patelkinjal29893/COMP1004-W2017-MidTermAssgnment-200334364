@@ -17,9 +17,15 @@ namespace COMP1004_W2017_MidTermAssgnment_200334364
 {
     public partial class FinalForm : Form
     {
+        public Form previosForm;
         public FinalForm()
         {
             InitializeComponent();
+        }
+
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

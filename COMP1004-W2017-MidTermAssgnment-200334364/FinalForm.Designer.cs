@@ -48,25 +48,25 @@
             this.CharacterInfoGroupBox = new System.Windows.Forms.GroupBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.WeightLabel = new System.Windows.Forms.Label();
+            this.AgeLabel = new System.Windows.Forms.Label();
             this.HeightLabel = new System.Windows.Forms.Label();
             this.NameLabel = new System.Windows.Forms.Label();
-            this.AgeLabel = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.AbilitiesGroupBox = new System.Windows.Forms.GroupBox();
-            this.STRLabel = new System.Windows.Forms.Label();
-            this.DEXLabel = new System.Windows.Forms.Label();
-            this.ENDLabel = new System.Windows.Forms.Label();
-            this.INTLabel = new System.Windows.Forms.Label();
-            this.PERLabel = new System.Windows.Forms.Label();
-            this.CHALabel = new System.Windows.Forms.Label();
-            this.STRTextBox = new System.Windows.Forms.TextBox();
-            this.DEXTextBox = new System.Windows.Forms.TextBox();
-            this.ENDTextBox = new System.Windows.Forms.TextBox();
-            this.INTTextBox = new System.Windows.Forms.TextBox();
-            this.PERTextBox = new System.Windows.Forms.TextBox();
             this.CHATextBox = new System.Windows.Forms.TextBox();
+            this.PERTextBox = new System.Windows.Forms.TextBox();
+            this.INTTextBox = new System.Windows.Forms.TextBox();
+            this.ENDTextBox = new System.Windows.Forms.TextBox();
+            this.DEXTextBox = new System.Windows.Forms.TextBox();
+            this.STRTextBox = new System.Windows.Forms.TextBox();
+            this.CHALabel = new System.Windows.Forms.Label();
+            this.PERLabel = new System.Windows.Forms.Label();
+            this.INTLabel = new System.Windows.Forms.Label();
+            this.ENDLabel = new System.Windows.Forms.Label();
+            this.DEXLabel = new System.Windows.Forms.Label();
+            this.STRLabel = new System.Windows.Forms.Label();
             this.ExitButton = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.RacePictureBox)).BeginInit();
@@ -248,6 +248,13 @@
             this.textBox5.Size = new System.Drawing.Size(90, 22);
             this.textBox5.TabIndex = 1;
             // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(70, 85);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(84, 22);
+            this.textBox7.TabIndex = 1;
+            // 
             // textBox6
             // 
             this.textBox6.Location = new System.Drawing.Point(70, 47);
@@ -264,6 +271,16 @@
             this.WeightLabel.Size = new System.Drawing.Size(56, 16);
             this.WeightLabel.TabIndex = 0;
             this.WeightLabel.Text = "Weight :";
+            // 
+            // AgeLabel
+            // 
+            this.AgeLabel.AutoSize = true;
+            this.AgeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AgeLabel.Location = new System.Drawing.Point(22, 88);
+            this.AgeLabel.Name = "AgeLabel";
+            this.AgeLabel.Size = new System.Drawing.Size(42, 16);
+            this.AgeLabel.TabIndex = 0;
+            this.AgeLabel.Text = "Age : ";
             // 
             // HeightLabel
             // 
@@ -284,23 +301,6 @@
             this.NameLabel.Size = new System.Drawing.Size(53, 17);
             this.NameLabel.TabIndex = 0;
             this.NameLabel.Text = "Name :";
-            // 
-            // AgeLabel
-            // 
-            this.AgeLabel.AutoSize = true;
-            this.AgeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AgeLabel.Location = new System.Drawing.Point(22, 88);
-            this.AgeLabel.Name = "AgeLabel";
-            this.AgeLabel.Size = new System.Drawing.Size(42, 16);
-            this.AgeLabel.TabIndex = 0;
-            this.AgeLabel.Text = "Age : ";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(70, 85);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(84, 22);
-            this.textBox7.TabIndex = 1;
             // 
             // AbilitiesGroupBox
             // 
@@ -324,50 +324,53 @@
             this.AbilitiesGroupBox.TabStop = false;
             this.AbilitiesGroupBox.Text = "Abilities";
             // 
-            // STRLabel
+            // CHATextBox
             // 
-            this.STRLabel.AutoSize = true;
-            this.STRLabel.Location = new System.Drawing.Point(27, 52);
-            this.STRLabel.Name = "STRLabel";
-            this.STRLabel.Size = new System.Drawing.Size(39, 16);
-            this.STRLabel.TabIndex = 0;
-            this.STRLabel.Text = "STR";
+            this.CHATextBox.Location = new System.Drawing.Point(116, 205);
+            this.CHATextBox.Name = "CHATextBox";
+            this.CHATextBox.ReadOnly = true;
+            this.CHATextBox.Size = new System.Drawing.Size(100, 22);
+            this.CHATextBox.TabIndex = 1;
             // 
-            // DEXLabel
+            // PERTextBox
             // 
-            this.DEXLabel.AutoSize = true;
-            this.DEXLabel.Location = new System.Drawing.Point(27, 83);
-            this.DEXLabel.Name = "DEXLabel";
-            this.DEXLabel.Size = new System.Drawing.Size(38, 16);
-            this.DEXLabel.TabIndex = 0;
-            this.DEXLabel.Text = "DEX";
+            this.PERTextBox.Location = new System.Drawing.Point(116, 173);
+            this.PERTextBox.Name = "PERTextBox";
+            this.PERTextBox.ReadOnly = true;
+            this.PERTextBox.Size = new System.Drawing.Size(100, 22);
+            this.PERTextBox.TabIndex = 1;
             // 
-            // ENDLabel
+            // INTTextBox
             // 
-            this.ENDLabel.AutoSize = true;
-            this.ENDLabel.Location = new System.Drawing.Point(27, 113);
-            this.ENDLabel.Name = "ENDLabel";
-            this.ENDLabel.Size = new System.Drawing.Size(40, 16);
-            this.ENDLabel.TabIndex = 0;
-            this.ENDLabel.Text = "END";
+            this.INTTextBox.Location = new System.Drawing.Point(116, 139);
+            this.INTTextBox.Name = "INTTextBox";
+            this.INTTextBox.ReadOnly = true;
+            this.INTTextBox.Size = new System.Drawing.Size(100, 22);
+            this.INTTextBox.TabIndex = 1;
             // 
-            // INTLabel
+            // ENDTextBox
             // 
-            this.INTLabel.AutoSize = true;
-            this.INTLabel.Location = new System.Drawing.Point(27, 145);
-            this.INTLabel.Name = "INTLabel";
-            this.INTLabel.Size = new System.Drawing.Size(33, 16);
-            this.INTLabel.TabIndex = 0;
-            this.INTLabel.Text = "INT";
+            this.ENDTextBox.Location = new System.Drawing.Point(116, 105);
+            this.ENDTextBox.Name = "ENDTextBox";
+            this.ENDTextBox.ReadOnly = true;
+            this.ENDTextBox.Size = new System.Drawing.Size(100, 22);
+            this.ENDTextBox.TabIndex = 1;
             // 
-            // PERLabel
+            // DEXTextBox
             // 
-            this.PERLabel.AutoSize = true;
-            this.PERLabel.Location = new System.Drawing.Point(27, 179);
-            this.PERLabel.Name = "PERLabel";
-            this.PERLabel.Size = new System.Drawing.Size(39, 16);
-            this.PERLabel.TabIndex = 0;
-            this.PERLabel.Text = "PER";
+            this.DEXTextBox.Location = new System.Drawing.Point(117, 77);
+            this.DEXTextBox.Name = "DEXTextBox";
+            this.DEXTextBox.ReadOnly = true;
+            this.DEXTextBox.Size = new System.Drawing.Size(100, 22);
+            this.DEXTextBox.TabIndex = 1;
+            // 
+            // STRTextBox
+            // 
+            this.STRTextBox.Location = new System.Drawing.Point(117, 46);
+            this.STRTextBox.Name = "STRTextBox";
+            this.STRTextBox.ReadOnly = true;
+            this.STRTextBox.Size = new System.Drawing.Size(100, 22);
+            this.STRTextBox.TabIndex = 1;
             // 
             // CHALabel
             // 
@@ -378,53 +381,50 @@
             this.CHALabel.TabIndex = 0;
             this.CHALabel.Text = "CHA";
             // 
-            // STRTextBox
+            // PERLabel
             // 
-            this.STRTextBox.Location = new System.Drawing.Point(117, 46);
-            this.STRTextBox.Name = "STRTextBox";
-            this.STRTextBox.ReadOnly = true;
-            this.STRTextBox.Size = new System.Drawing.Size(100, 22);
-            this.STRTextBox.TabIndex = 1;
+            this.PERLabel.AutoSize = true;
+            this.PERLabel.Location = new System.Drawing.Point(27, 179);
+            this.PERLabel.Name = "PERLabel";
+            this.PERLabel.Size = new System.Drawing.Size(39, 16);
+            this.PERLabel.TabIndex = 0;
+            this.PERLabel.Text = "PER";
             // 
-            // DEXTextBox
+            // INTLabel
             // 
-            this.DEXTextBox.Location = new System.Drawing.Point(117, 77);
-            this.DEXTextBox.Name = "DEXTextBox";
-            this.DEXTextBox.ReadOnly = true;
-            this.DEXTextBox.Size = new System.Drawing.Size(100, 22);
-            this.DEXTextBox.TabIndex = 1;
+            this.INTLabel.AutoSize = true;
+            this.INTLabel.Location = new System.Drawing.Point(27, 145);
+            this.INTLabel.Name = "INTLabel";
+            this.INTLabel.Size = new System.Drawing.Size(33, 16);
+            this.INTLabel.TabIndex = 0;
+            this.INTLabel.Text = "INT";
             // 
-            // ENDTextBox
+            // ENDLabel
             // 
-            this.ENDTextBox.Location = new System.Drawing.Point(116, 105);
-            this.ENDTextBox.Name = "ENDTextBox";
-            this.ENDTextBox.ReadOnly = true;
-            this.ENDTextBox.Size = new System.Drawing.Size(100, 22);
-            this.ENDTextBox.TabIndex = 1;
+            this.ENDLabel.AutoSize = true;
+            this.ENDLabel.Location = new System.Drawing.Point(27, 113);
+            this.ENDLabel.Name = "ENDLabel";
+            this.ENDLabel.Size = new System.Drawing.Size(40, 16);
+            this.ENDLabel.TabIndex = 0;
+            this.ENDLabel.Text = "END";
             // 
-            // INTTextBox
+            // DEXLabel
             // 
-            this.INTTextBox.Location = new System.Drawing.Point(116, 139);
-            this.INTTextBox.Name = "INTTextBox";
-            this.INTTextBox.ReadOnly = true;
-            this.INTTextBox.Size = new System.Drawing.Size(100, 22);
-            this.INTTextBox.TabIndex = 1;
+            this.DEXLabel.AutoSize = true;
+            this.DEXLabel.Location = new System.Drawing.Point(27, 83);
+            this.DEXLabel.Name = "DEXLabel";
+            this.DEXLabel.Size = new System.Drawing.Size(38, 16);
+            this.DEXLabel.TabIndex = 0;
+            this.DEXLabel.Text = "DEX";
             // 
-            // PERTextBox
+            // STRLabel
             // 
-            this.PERTextBox.Location = new System.Drawing.Point(116, 173);
-            this.PERTextBox.Name = "PERTextBox";
-            this.PERTextBox.ReadOnly = true;
-            this.PERTextBox.Size = new System.Drawing.Size(100, 22);
-            this.PERTextBox.TabIndex = 1;
-            // 
-            // CHATextBox
-            // 
-            this.CHATextBox.Location = new System.Drawing.Point(116, 205);
-            this.CHATextBox.Name = "CHATextBox";
-            this.CHATextBox.ReadOnly = true;
-            this.CHATextBox.Size = new System.Drawing.Size(100, 22);
-            this.CHATextBox.TabIndex = 1;
+            this.STRLabel.AutoSize = true;
+            this.STRLabel.Location = new System.Drawing.Point(27, 52);
+            this.STRLabel.Name = "STRLabel";
+            this.STRLabel.Size = new System.Drawing.Size(39, 16);
+            this.STRLabel.TabIndex = 0;
+            this.STRLabel.Text = "STR";
             // 
             // ExitButton
             // 
@@ -435,6 +435,7 @@
             this.ExitButton.TabIndex = 4;
             this.ExitButton.Text = "Exit";
             this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
             // FinalForm
             // 
