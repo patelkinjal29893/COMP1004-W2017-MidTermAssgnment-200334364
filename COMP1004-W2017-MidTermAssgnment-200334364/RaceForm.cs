@@ -17,6 +17,7 @@ namespace COMP1004_W2017_MidTermAssgnment_200334364
 {
     public partial class RaceForm : Form
     {
+        public Form previousForm;
         public RaceForm()
         {
             InitializeComponent();
