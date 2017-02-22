@@ -27,5 +27,6 @@ namespace COMP1004_W2017_MidTermAssgnment_200334364
         {
             this.Close();
         }
+
     }
 }

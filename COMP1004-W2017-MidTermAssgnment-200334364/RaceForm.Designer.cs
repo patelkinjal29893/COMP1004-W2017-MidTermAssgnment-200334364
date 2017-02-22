@@ -103,6 +103,7 @@
             this.ElfRadioButton.TabIndex = 2;
             this.ElfRadioButton.Text = "Elf";
             this.ElfRadioButton.UseVisualStyleBackColor = true;
+            this.ElfRadioButton.CheckedChanged += new System.EventHandler(this.ElfRadioButton_CheckedChanged);
             // 
             // HalflingRadioButton
             // 
@@ -113,6 +114,7 @@
             this.HalflingRadioButton.TabIndex = 2;
             this.HalflingRadioButton.Text = "Halfling";
             this.HalflingRadioButton.UseVisualStyleBackColor = true;
+            this.HalflingRadioButton.CheckedChanged += new System.EventHandler(this.HalflingRadioButton_CheckedChanged);
             // 
             // DwarfRadioButton
             // 
@@ -123,6 +125,7 @@
             this.DwarfRadioButton.TabIndex = 1;
             this.DwarfRadioButton.Text = "Dwarf";
             this.DwarfRadioButton.UseVisualStyleBackColor = true;
+            this.DwarfRadioButton.CheckedChanged += new System.EventHandler(this.DwarfRadioButton_CheckedChanged);
             // 
             // HumanRadioButton
             // 
@@ -134,7 +137,7 @@
             this.HumanRadioButton.TabIndex = 0;
             this.HumanRadioButton.TabStop = true;
             this.HumanRadioButton.Text = "Human";
-            this.HumanRadioButton.UseVisualStyleBackColor = true;
+            this.HumanRadioButton.UseVisualStyleBackColor = true;           
             // 
             // RaceForm
             // 
