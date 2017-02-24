@@ -14,9 +14,9 @@ using System.Windows.Forms;
 
 namespace COMP1004_W2017_MidTermAssgnment_200334364
 {
-    partial class AboutForm : Form
+    partial class AboutBox : Form
     {
-        public AboutForm()
+        public AboutBox()
         {
             InitializeComponent();
             this.Text = String.Format("About {0}", AssemblyTitle);

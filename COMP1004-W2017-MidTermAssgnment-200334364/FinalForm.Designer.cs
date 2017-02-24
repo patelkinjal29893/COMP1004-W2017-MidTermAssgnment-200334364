@@ -39,17 +39,17 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.RacePictureBox = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.RaceTextBox = new System.Windows.Forms.TextBox();
+            this.HealthPointTextBox = new System.Windows.Forms.TextBox();
+            this.JobTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.CharacterInfoGroupBox = new System.Windows.Forms.GroupBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.HeightTextBox = new System.Windows.Forms.TextBox();
+            this.WeightTextBox = new System.Windows.Forms.TextBox();
+            this.AgeTextBox = new System.Windows.Forms.TextBox();
+            this.NameTextBox = new System.Windows.Forms.TextBox();
             this.WeightLabel = new System.Windows.Forms.Label();
             this.AgeLabel = new System.Windows.Forms.Label();
             this.HeightLabel = new System.Windows.Forms.Label();
@@ -102,13 +102,14 @@
             this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
             this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.printToolStripMenuItem.Text = "&Print";
+            this.printToolStripMenuItem.Click += new System.EventHandler(this.printToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             // 
             // editToolStripMenuItem
@@ -123,8 +124,9 @@
             // 
             this.fontToolStripMenuItem.Name = "fontToolStripMenuItem";
             this.fontToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
-            this.fontToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.fontToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.fontToolStripMenuItem.Text = "&Font";
+            this.fontToolStripMenuItem.Click += new System.EventHandler(this.fontToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -137,8 +139,9 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.aboutToolStripMenuItem.Text = "&About...";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // RacePictureBox
             // 
@@ -150,9 +153,9 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.RaceTextBox);
+            this.groupBox1.Controls.Add(this.HealthPointTextBox);
+            this.groupBox1.Controls.Add(this.JobTextBox);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label3);
@@ -162,29 +165,29 @@
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             // 
-            // textBox1
+            // RaceTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(133, 63);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
+            this.RaceTextBox.Location = new System.Drawing.Point(133, 63);
+            this.RaceTextBox.Name = "RaceTextBox";
+            this.RaceTextBox.ReadOnly = true;
+            this.RaceTextBox.Size = new System.Drawing.Size(100, 20);
+            this.RaceTextBox.TabIndex = 1;
             // 
-            // textBox2
+            // HealthPointTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(133, 104);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 1;
+            this.HealthPointTextBox.Location = new System.Drawing.Point(133, 104);
+            this.HealthPointTextBox.Name = "HealthPointTextBox";
+            this.HealthPointTextBox.ReadOnly = true;
+            this.HealthPointTextBox.Size = new System.Drawing.Size(100, 20);
+            this.HealthPointTextBox.TabIndex = 1;
             // 
-            // textBox3
+            // JobTextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(133, 20);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 1;
+            this.JobTextBox.Location = new System.Drawing.Point(133, 20);
+            this.JobTextBox.Name = "JobTextBox";
+            this.JobTextBox.ReadOnly = true;
+            this.JobTextBox.Size = new System.Drawing.Size(100, 20);
+            this.JobTextBox.TabIndex = 1;
             // 
             // label1
             // 
@@ -218,10 +221,10 @@
             // 
             // CharacterInfoGroupBox
             // 
-            this.CharacterInfoGroupBox.Controls.Add(this.textBox4);
-            this.CharacterInfoGroupBox.Controls.Add(this.textBox5);
-            this.CharacterInfoGroupBox.Controls.Add(this.textBox7);
-            this.CharacterInfoGroupBox.Controls.Add(this.textBox6);
+            this.CharacterInfoGroupBox.Controls.Add(this.HeightTextBox);
+            this.CharacterInfoGroupBox.Controls.Add(this.WeightTextBox);
+            this.CharacterInfoGroupBox.Controls.Add(this.AgeTextBox);
+            this.CharacterInfoGroupBox.Controls.Add(this.NameTextBox);
             this.CharacterInfoGroupBox.Controls.Add(this.WeightLabel);
             this.CharacterInfoGroupBox.Controls.Add(this.AgeLabel);
             this.CharacterInfoGroupBox.Controls.Add(this.HeightLabel);
@@ -234,33 +237,33 @@
             this.CharacterInfoGroupBox.TabStop = false;
             this.CharacterInfoGroupBox.Text = "Character\'s Information";
             // 
-            // textBox4
+            // HeightTextBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(234, 47);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(90, 22);
-            this.textBox4.TabIndex = 1;
+            this.HeightTextBox.Location = new System.Drawing.Point(234, 47);
+            this.HeightTextBox.Name = "HeightTextBox";
+            this.HeightTextBox.Size = new System.Drawing.Size(90, 22);
+            this.HeightTextBox.TabIndex = 1;
             // 
-            // textBox5
+            // WeightTextBox
             // 
-            this.textBox5.Location = new System.Drawing.Point(234, 85);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(90, 22);
-            this.textBox5.TabIndex = 1;
+            this.WeightTextBox.Location = new System.Drawing.Point(234, 85);
+            this.WeightTextBox.Name = "WeightTextBox";
+            this.WeightTextBox.Size = new System.Drawing.Size(90, 22);
+            this.WeightTextBox.TabIndex = 1;
             // 
-            // textBox7
+            // AgeTextBox
             // 
-            this.textBox7.Location = new System.Drawing.Point(70, 85);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(84, 22);
-            this.textBox7.TabIndex = 1;
+            this.AgeTextBox.Location = new System.Drawing.Point(70, 85);
+            this.AgeTextBox.Name = "AgeTextBox";
+            this.AgeTextBox.Size = new System.Drawing.Size(84, 22);
+            this.AgeTextBox.TabIndex = 1;
             // 
-            // textBox6
+            // NameTextBox
             // 
-            this.textBox6.Location = new System.Drawing.Point(70, 47);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(84, 22);
-            this.textBox6.TabIndex = 1;
+            this.NameTextBox.Location = new System.Drawing.Point(70, 47);
+            this.NameTextBox.Name = "NameTextBox";
+            this.NameTextBox.Size = new System.Drawing.Size(84, 22);
+            this.NameTextBox.TabIndex = 1;
             // 
             // WeightLabel
             // 
@@ -452,6 +455,7 @@
             this.Name = "FinalForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Your Character Selections";
+            this.Load += new System.EventHandler(this.FinalForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.RacePictureBox)).EndInit();
@@ -478,17 +482,16 @@
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.PictureBox RacePictureBox;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox RaceTextBox;
+        private System.Windows.Forms.TextBox JobTextBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox CharacterInfoGroupBox;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox HeightTextBox;
+        private System.Windows.Forms.TextBox WeightTextBox;
+        private System.Windows.Forms.TextBox AgeTextBox;
+        private System.Windows.Forms.TextBox NameTextBox;
         private System.Windows.Forms.Label WeightLabel;
         private System.Windows.Forms.Label AgeLabel;
         private System.Windows.Forms.Label HeightLabel;
@@ -507,5 +510,6 @@
         private System.Windows.Forms.Label DEXLabel;
         private System.Windows.Forms.Label STRLabel;
         private System.Windows.Forms.Button ExitButton;
+        public System.Windows.Forms.TextBox HealthPointTextBox;
     }
 }

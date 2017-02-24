@@ -73,6 +73,7 @@
             this.CultistRadioButton.TabStop = true;
             this.CultistRadioButton.Text = "Cultist";
             this.CultistRadioButton.UseVisualStyleBackColor = true;
+            this.CultistRadioButton.CheckedChanged += new System.EventHandler(this.CultistRadioButton_CheckedChanged);
             // 
             // RogueRadioButton
             // 
@@ -84,6 +85,7 @@
             this.RogueRadioButton.TabStop = true;
             this.RogueRadioButton.Text = "Rogue";
             this.RogueRadioButton.UseVisualStyleBackColor = true;
+            this.RogueRadioButton.CheckedChanged += new System.EventHandler(this.RogueRadioButton_CheckedChanged);
             // 
             // MagickerRadioButton
             // 
@@ -95,6 +97,7 @@
             this.MagickerRadioButton.TabStop = true;
             this.MagickerRadioButton.Text = "Magicker";
             this.MagickerRadioButton.UseVisualStyleBackColor = true;
+            this.MagickerRadioButton.CheckedChanged += new System.EventHandler(this.MagickerRadioButton_CheckedChanged);
             // 
             // SoldierRadioButton
             // 
@@ -106,11 +109,12 @@
             this.SoldierRadioButton.TabStop = true;
             this.SoldierRadioButton.Text = "Soldier";
             this.SoldierRadioButton.UseVisualStyleBackColor = true;
+            this.SoldierRadioButton.CheckedChanged += new System.EventHandler(this.SoldierRadioButton_CheckedChanged);
             // 
             // HealthPointsLabel
             // 
             this.HealthPointsLabel.AutoSize = true;
-            this.HealthPointsLabel.Location = new System.Drawing.Point(357, 131);
+            this.HealthPointsLabel.Location = new System.Drawing.Point(362, 124);
             this.HealthPointsLabel.Name = "HealthPointsLabel";
             this.HealthPointsLabel.Size = new System.Drawing.Size(126, 13);
             this.HealthPointsLabel.TabIndex = 5;

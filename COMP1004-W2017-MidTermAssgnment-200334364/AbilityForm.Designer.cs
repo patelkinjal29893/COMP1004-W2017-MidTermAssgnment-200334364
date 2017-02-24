@@ -214,13 +214,6 @@
         }
 
         #endregion
-
-        internal System.Windows.Forms.TextBox CHATextBox;
-        internal System.Windows.Forms.TextBox PERTextBox;
-        internal System.Windows.Forms.TextBox INTTextBox;
-        internal System.Windows.Forms.TextBox ENDTextBox;
-        internal System.Windows.Forms.TextBox DEXTextBox;
-        internal System.Windows.Forms.TextBox STRTextBox;
         internal System.Windows.Forms.Label CHALabel;
         internal System.Windows.Forms.Label PERLabel;
         internal System.Windows.Forms.Label INTLabel;
@@ -229,6 +222,12 @@
         internal System.Windows.Forms.Label STRLabel;
         internal System.Windows.Forms.Button NextButton;
         internal System.Windows.Forms.Button RollButton;
+        public System.Windows.Forms.TextBox CHATextBox;
+        public System.Windows.Forms.TextBox PERTextBox;
+        public System.Windows.Forms.TextBox INTTextBox;
+        public System.Windows.Forms.TextBox ENDTextBox;
+        public System.Windows.Forms.TextBox DEXTextBox;
+        public System.Windows.Forms.TextBox STRTextBox;
     }
 }
 

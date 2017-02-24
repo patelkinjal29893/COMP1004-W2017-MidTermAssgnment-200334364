@@ -137,7 +137,7 @@
             this.HumanRadioButton.TabIndex = 0;
             this.HumanRadioButton.TabStop = true;
             this.HumanRadioButton.Text = "Human";
-            this.HumanRadioButton.UseVisualStyleBackColor = true;           
+            this.HumanRadioButton.UseVisualStyleBackColor = true;
             // 
             // RaceForm
             // 
@@ -165,11 +165,11 @@
         internal System.Windows.Forms.PictureBox CharacterPictureBox;
         internal System.Windows.Forms.Button NextButton;
         private System.Windows.Forms.Label RacialBonusLabel;
-        private System.Windows.Forms.TextBox RacialBonusTextBox;
         private System.Windows.Forms.GroupBox RaceGroupBox;
         private System.Windows.Forms.RadioButton ElfRadioButton;
         private System.Windows.Forms.RadioButton HalflingRadioButton;
         private System.Windows.Forms.RadioButton DwarfRadioButton;
         private System.Windows.Forms.RadioButton HumanRadioButton;
+        public System.Windows.Forms.TextBox RacialBonusTextBox;
     }
 }

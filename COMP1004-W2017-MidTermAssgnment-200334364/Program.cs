@@ -13,6 +13,8 @@ namespace COMP1004_W2017_MidTermAssgnment_200334364
 {
     static class Program
     {
+        internal static Character character;
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
