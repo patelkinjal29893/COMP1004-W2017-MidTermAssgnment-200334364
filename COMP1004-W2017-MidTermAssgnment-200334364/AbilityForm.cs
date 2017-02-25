@@ -2,6 +2,7 @@
 // Author's Name : Kinjal Patel 
 // Student ID : 200334364
 // App Creation Date : February 22, 2017
+// Description : this form is for abilities that you can randomly generate by clicking Roll Button.
 
 using System;
 using System.Collections.Generic;
@@ -57,6 +58,11 @@ namespace COMP1004_W2017_MidTermAssgnment_200334364
             return result;
         }
 
+        /// <summary>
+        /// This is the Handler for Roll Button for generating random numbers
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void RollButton_Click(object sender, EventArgs e)
         {
             // iterates through the textbox list
@@ -69,7 +75,11 @@ namespace COMP1004_W2017_MidTermAssgnment_200334364
                 this._abilities[abilities].Text = currentRoll.ToString();
             }
         }
-
+        /// <summary>
+        /// This is the handler for next Button to move into next form in RaceForm
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void NextButton_Click(object sender, EventArgs e)
         {
             Character character = Program.character;
@@ -85,7 +95,10 @@ namespace COMP1004_W2017_MidTermAssgnment_200334364
             RaceForm raceForm = new RaceForm();
 
             raceForm.previousForm = this;
+            
+            //Display new RaceForm
             raceForm.Show();
+            //Hide this AbilityForm
             this.Hide();
         }
     }
